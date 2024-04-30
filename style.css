@@ -29,8 +29,8 @@ body {
 }
 
 #imgAstro {
-    bottom: 30%; /* Adjust the bottom position as a percentage */
-    left: 47%; /* Adjust the left position as a percentage */
+    bottom: 25%; /* Adjust the bottom position as a percentage */
+    left: 44%; /* Adjust the left position as a percentage */
     width: 800px; /* Set the initial width of imgAstro */
     display: block;
     max-width: 100%; /* Set a maximum width for imgAstro */
