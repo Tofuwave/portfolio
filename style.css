@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: JetBrains;
+    src: url(fonts/variable/JetBrainsMono[wght].ttf);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: JetBrains;
+    overflow-x: hidden;
+    min-width: 500px;
+    background-color: rgb(0, 0, 0);
+   
+}
+
+/* Responsive image */
+#imgBlack {
+    width: 100%; /* Occupy full width of its container */
+    height: auto; /* Automatically adjust height */
+    display: block; /* Remove extra space below image */
+    z-index: -1; /* Set a lower z-index to put it behind other elements */
+}
+
+#imgAstro {
+    bottom: 30%; /* Adjust the bottom position as a percentage */
+    left: 47%; /* Adjust the left position as a percentage */
+    width: 800px; /* Set the initial width of imgAstro */
+    display: block;
+    max-width: 100%; /* Set a maximum width for imgAstro */
+    z-index: 1; /* Ensure imgAstro appears above imgBlack */
+    position: absolute; /* Position imgAstro absolutely relative to its containing block */
+    animation: float 6s ease-in-out infinite;
+}
+
+@media screen and (max-width: 1463px) {
+    #imgAstro {
+        width: 0%; /* Set width as a percentage for smaller screens */
+    }
+}
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+
+header {
+    display: flex;
+    justify-content:space-around; /* Distributes items along the main axis with maximum space between them */
+    align-items: center; /* Centers items along the cross axis */
+    gap: 30%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    box-shadow: -1px 35px 20px -1px rgb(0, 0, 0);
+    font-size: 25px;
+    
+}
+
+.meText{
+    position: absolute;
+    left: 10%; /* Adjust the left position as needed */
+    right: 10%; /* Adjust the right position as needed */
+    top: 30%; /* Adjust the top position as needed */
+    width: 60%; /* Adjust the width as needed */
+    max-width: 60%;
+    min-width: 350px;
+    padding: 5px;
+    font-size: 36px; /* Set the initial font size */
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 868px) {
+    .meText {
+        left: 5%; /* Adjust the left position for smaller screens */
+        right: 5%; /* Adjust the right position for smaller screens */
+        top: 20%;
+        width: 75%; /* Adjust the width for smaller screens */
+        font-size: 27px; /* Adjust the font size for smaller screens */
+    }
+}
+
+
+@media screen and (max-width: 521px) {
+    .meText {
+        left: 5%; /* Adjust the left position for smaller screens */
+        right: 5%; /* Adjust the right position for smaller screens */
+        top: 15%;
+        width: 100%; /* Adjust the width for smaller screens */
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+}
+
+.highlight2 {
+    width: 100%;
+    max-width: 600px;
+    color: #eb145b;
+    overflow: hidden;
+    border-right: .15em solid #eb145b;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    animation: 
+      typing 2s steps(20, end),
+      blink-caret .8s step-end infinite;
+  }
+  
+
+
+
+h1,h2{
+    color: white;  
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+   color: #fff;
+   transition: 0.7s;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 255, 255),
+      0 0 82px rgb(255, 255, 255),
+      0 0 92px rgb(255, 255, 255),
+      0 0 102px rgb(255, 255, 255),
+      0 0 151px rgb(255, 255, 255);
+    
+}
+
+
+
+.meBody {
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: center;
+    padding: 30px; /* Reduzido para melhorar o espaçamento em telas menores */
+    box-shadow: 10px 34px 90px 90px rgb(0, 0, 0);;
+}
+
+
+#imgBlack {
+    width: 100%;
+    max-height: 90vh; /* Reduzido para melhorar o ajuste em telas menores */
+    object-fit: cover;
+    position: relative;
+}
+
+
+
+.about {
+    width: 100%;
+}
+
+
+#about{
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.second-part{
+    text-decoration: underline wavy #eb145b;
+}
+
+.highlight{
+    color: #eb145b;
+}
+  
+.expanded .details {
+    display: inline-block;
+}
+
+.details {
+    display: none;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 0, 98); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+  .summary:hover{
+    cursor: pointer;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0px }
+    to { width: 800px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 0, 98); }
+  }
+  
+
+.space{
+    height: 400px;
+    margin-left: 75%;
+    
+}
+.space2{
+    height: 400px;
+    margin-right: 75%; 
+}
+
+p{
+    max-width: 80rem;
+    text-indent: 40px;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px auto; /* Shortened margin declaration */
+    max-width: 40%;
+    min-width:min-content;
+    gap: 20px;
+    height: 100vh; /* Define the height to fill the window height */
+    overflow-x: hidden;
+     /* Enable vertical scrolling if necessary */
+    scrollbar-width: none;
+}
+
+.skills {
+    border: 3px solid white;
+    min-width: 200px;
+    flex:auto;
+    text-align: center;
+    padding: 10px; /* Add internal spacing */
+    border-radius: 8px;
+}
+
+
+
+.skills:hover{
+    background-color: #eb145b;
+    box-shadow: 0px 0px 50px 10px #eb145b;
+    transition: all 200ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+#skills{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    padding: 8%; /* Adjust padding based on percentage */
+    height: 70vh; /* Use viewport height */
+    max-width: 860px; /* Limit maximum width */
+    margin: 2% auto; /* Center the slider horizontally */
+    min-width: 420px;
+  }
+  
+  .slider {
+    display: flex; 
+    transition: transform 0.9s ease;
+    height: 40vh; /* Use viewport height */
+    width: 80%; 
+    margin: 0 auto; /* Center the slider */
+  }
+  
+  .slide {
+    width: 100%; /* Adjust width based on percentage */
+    flex-shrink: 0; /* or adjust for grid */
+    /* For demonstration purpose */
+    height: 400px;
+    padding: 0;
+    margin-right: 5%; /* Add margin between slides */  
+  }
+  
+.slide:hover{
+    cursor: pointer;
+}
+
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    top: 90%;
+    transform: translateY(-90%);
+    z-index: 1;
+  }
+  
+  button.prev, button.next {
+    padding: 2em 3em;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    background: rgb(0, 0, 0);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+    left: -1%; /* Position the prev button to the left outside the slider container */
+  }
+  
+  button.prev::before, button.next::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    border-radius: inherit;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  }
+  
+  button.prev:hover::before, button.next::hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+  }
+  
+  button.prev:hover, button.next:hover {
+    background: #eb145c;
+    transform: translate(0, 0.375em);
+    color: #fff;
+    transition: 0.7s;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 255, 255), 0 0 92px rgb(255, 255, 255), 0 0 102px rgb(255, 255, 255), 0 0 151px rgb(255, 255, 255);
+  }
+  
+  button.prev:active, button.next:active {
+    transform: translate(0em, 0.75em);
+    transition: 0.10s;
+  }
+  
+  
+
+#projects{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+}
+
+.card{
+    border: 3px solid white;
+    font-size: 10px;
+    
+}
+.cardImg{
+    width: 500px;
+}
+
+
+#contact{
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 8px;
+    margin-bottom: 100px;
+    margin-top: 0;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+

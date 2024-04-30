@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    
+</head>
+<body>
+    <header>
+    <ul>
+        <li><a href="#about">.about</a></li>
+        <li><a href="#skills">.skills</a></li>
+        <li><a href="#projects">.projects</a></li>
+        <li><a href="#contact">.contact</a></li>
+    </ul>
+</header>
+    <div class = "container-show">
+    <div class = "meText">
+        <h2>Yo! I'm</h2>
+        <h2 class="highlight2"><span><strong>LUCAS GUIMARÃES.</strong></span></h2>
+        <h2>a Software Engeneer</h2>
+        
+    </div>
+    <img id = "imgBlack" src="images/STEAM Black Hole Wallpaper  - Imgur.gif" >
+    <img id = "imgAstro" src="images/Screenshot_2024-04-28_at_21-42-35_Mega_Creator_Ferramenta_de_Design_Gráfico_Online_Gratuita-ai-brush-removebg-nipof9h.png">
+    
+    </div>
+    <div class = "space1"></div>
+    <div class = "meBody">
+        
+        <div class="about">
+            <h2 id = "about"><img src="images/MOSHED-2024-4-29-21-20-17-ezgif.com-crop.gif"><span 
+            class="first-part">Abo</span><span class="second-part">ut</span></h2>
+            <p>I'm a guy who studies a plethora of fields within Computer Science. From algorithms and data structures to artificial intelligence and machine learning, my curiosity knows no bounds;</p>
+
+            <p>Currently pursuing a bachelor's degree in <span class= "highlight">Software Engineering.</span></p>
+            <div class="expandable-text" onclick="toggleText()">
+                <span class="summary">outside work...></span>
+                <span class="details">I do a bunch of things like: reading,whatch anime,working out and more</span>
+              </div>
+              
+        </div>
+    
+        <div class="space"><img src="images/wormhole.png"></div>
+
+        <h2 id = "skills"><img src="images/MOSHED-SKILLS.gif"><span class="first-part">Skil</span><span class="second-part">ls</span></h2>
+        
+        <div class="Container">
+        <div class="skills">
+                <img src="images/icons8-html-144.png">
+                <h1>HTML</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-css-logo-144.png">
+                <h1>CSS3</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-javascript-144.png">
+                <h1>JavaScript</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-logo-mysql-144.png">
+                <h1>MySQL</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-figma-144.png">
+                <h1>Figma</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-linguagem-de-programação-ruby-144.png">
+                <h1>Ruby</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-rubi-sobre-trilhos-144.png">
+                <h1>Ruby On Rails</h1>
+        </div>
+        <div class="skills">
+                <img src="images/icons8-programação-c-144.png">
+                <h1>C</h1>
+        </div>
+        <div class="skills">
+            <img src="images/icons8-git-144.png">
+            <h1>Git</h1>
+        </div>
+        <div class="skills">
+            <img src="images/icons8-bootstrap-144.png">
+            <h1>Bootstrap</h1>
+        </div>
+        <div class="skills">
+            <img src="images/icons8-c++-144.png">
+            <h1>C++</h1>
+        </div>
+    </div>
+    
+    <div class="space2"><img src="images/ww.png"></div>
+    <h2 id = "projects"><img = src="images/MOSHED-IDEA.gif"><span class="first-part">Projec</span><span class="second-part">ts</span></h2>
+    <div class = "slidebutton">
+    <div class="slider-container">
+        <button class="prev"><h1><</h1></button>
+        <button class="next"><h1>></h1></button>
+        <div class="slider">
+          <div class="slide"><a href="https://github.com/Tofuwave/Cs50-Homepage.git"><img src="images/Screenshot 2024-04-21 at 15-45-27 My Webpage.png" style="width: 100%; height: 100%;"></a><h3>Solar.Wiki</h3></div>
+          <div class="slide"><a href="https://github.com/Tofuwave/100-days-of-code-JS/tree/main/Day%2001"><img src="images/Screenshot 2024-04-21 at 15-30-48 Pixel Art Genarator.png"  style="width: 100%; height: 100%;"></a><h3>Pixel.Draw</h3></div>
+          <div class="slide"><img src="images/Screenshot 2024-04-21 at 14-59-02 PassGen.png" style="width: 100%; height: 100%; cursor:initial;"><h3>soon</h3></div>
+          <div class="slide"><a href="https://github.com/Tofuwave/Cs50-2023/tree/main/Final%20Project"><img src="images/Screenshot 2024-04-27 204222.png" style="width: 100%; height: 100%;"></a><h3>Solar System Simulation</h3></div>
+          <!-- Add more slides as needed -->
+        </div>
+        </div>
+      </div>
+      <div class="space"><img src="images/ff.png"></div>
+        <h2 id = "contact"><img = src="images/MOSHED-CONTACT.gif"><span class="first-part">Conta</span><span class="second-part">ct</span></h2>
+        <div class="contato">
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+
+
+    <footer>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 340" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="2" y1="1" y2="0"><stop stop-color="rgba(250.333, 250.333, 250.333, 1)" offset="0%"></stop><stop stop-color="rgb(255,255,255)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,170L26.7,164.3C53.3,159,107,147,160,147.3C213.3,147,267,159,320,181.3C373.3,204,427,238,480,209.7C533.3,181,587,91,640,45.3C693.3,0,747,0,800,5.7C853.3,11,907,23,960,39.7C1013.3,57,1067,79,1120,124.7C1173.3,170,1227,238,1280,266.3C1333.3,295,1387,283,1440,260.7C1493.3,238,1547,204,1600,209.7C1653.3,215,1707,261,1760,266.3C1813.3,272,1867,238,1920,209.7C1973.3,181,2027,159,2080,164.3C2133.3,170,2187,204,2240,221C2293.3,238,2347,238,2400,221C2453.3,204,2507,170,2560,164.3C2613.3,159,2667,181,2720,187C2773.3,193,2827,181,2880,181.3C2933.3,181,2987,193,3040,204C3093.3,215,3147,227,3200,209.7C3253.3,193,3307,147,3360,158.7C3413.3,170,3467,238,3520,221C3573.3,204,3627,102,3680,68C3733.3,34,3787,68,3813,85L3840,102L3840,340L3813.3,340C3786.7,340,3733,340,3680,340C3626.7,340,3573,340,3520,340C3466.7,340,3413,340,3360,340C3306.7,340,3253,340,3200,340C3146.7,340,3093,340,3040,340C2986.7,340,2933,340,2880,340C2826.7,340,2773,340,2720,340C2666.7,340,2613,340,2560,340C2506.7,340,2453,340,2400,340C2346.7,340,2293,340,2240,340C2186.7,340,2133,340,2080,340C2026.7,340,1973,340,1920,340C1866.7,340,1813,340,1760,340C1706.7,340,1653,340,1600,340C1546.7,340,1493,340,1440,340C1386.7,340,1333,340,1280,340C1226.7,340,1173,340,1120,340C1066.7,340,1013,340,960,340C906.7,340,853,340,800,340C746.7,340,693,340,640,340C586.7,340,533,340,480,340C426.7,340,373,340,320,340C266.7,340,213,340,160,340C106.7,340,53,340,27,340L0,340Z"></path></svg>
+    </footer>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
