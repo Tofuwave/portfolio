@@ -32,3 +32,5 @@ I just want to create with vanilla HTML, CSS, and JS to test my skills, learn mo
 
 * The icons are from [ICONS8](https://icons8.com.br/)
 * the amazing icon effect were made with [PhotoMosh](https://photomosh.com/app/)
+* [Black Hole Gif](https://imgur.com/gallery/JyIG8O5)
+* [Fonts](https://www.jetbrains.com/lp/mono/)
