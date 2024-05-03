@@ -1,6 +1,7 @@
 <h1>Personal Portfolio</h1>
 
-![Screenshot 2024-05-01 at 16-59-31 Portfolio](https://github.com/Tofuwave/portfolio/assets/66047380/fb9c7c83-4c36-4ce6-9582-57da3e4f3e4f)
+![Screenshot 2024-05-03 at 09-46-59 Portfolio](https://github.com/Tofuwave/portfolio/assets/66047380/b24fbb9b-05c5-48e0-9335-f9ba6333203b)
+
 
 [Take a Look !](https://tofuwave.github.io/portfolio/)
 
